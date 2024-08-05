@@ -236,5 +236,20 @@ public class App {
             System.out.print(i + " ");
             i++;
         } while (i < 10);
+        System.out.println();
+
+        // ---
+
+        // Flow controllers
+        System.out.println("Break and Continue:");
+        i = 0;
+
+        for (i = 0; i < 10; i++) {
+            if (i == 2) continue;
+            if (i == 8) break;
+
+            System.out.print(i + " ");
+        }
+
     }
 }
