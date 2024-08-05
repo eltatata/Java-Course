@@ -250,6 +250,26 @@ public class App {
 
             System.out.print(i + " ");
         }
+        System.out.println();
 
+        // ---
+        
+        // Arrays
+        System.out.println("Array:");
+
+        int[] numbers = new int[5];
+        numbers[0] = 10;
+        numbers[1] = 20;
+        numbers[2] = 30;
+        numbers[3] = 40;
+        numbers[4] = 50;
+
+        System.out.println("Length: " + numbers.length);
+        
+        System.out.println("Elements in the array:");
+        for (int n : numbers) {
+            System.out.print(n + " ");
+        }
+        
     }
 }
