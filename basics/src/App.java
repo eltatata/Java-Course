@@ -228,5 +228,13 @@ public class App {
             System.out.print(i + " ");
             i++;
         }
+
+        // Do While
+        System.out.println("\nDo While loop:");
+        i = 0;
+        do {
+            System.out.print(i + " ");
+            i++;
+        } while (i < 10);
     }
 }
