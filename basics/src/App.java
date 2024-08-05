@@ -220,5 +220,13 @@ public class App {
         for (int i = 0; i < message.length(); i++) {
             System.out.println("For loop message: " + message.charAt(i));
         }
+
+        // While
+        System.out.println("While loop:");
+        int i = 0;
+        while (i < 10) {
+            System.out.print(i + " ");
+            i++;
+        }
     }
 }
