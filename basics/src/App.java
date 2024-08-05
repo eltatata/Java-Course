@@ -205,5 +205,20 @@ public class App {
         }
 
         scanner.close();
+
+        // ---
+
+        // Loops
+        // For
+        System.out.println("For loop:");
+        for (int i = 0; i < 10; i++) {
+            System.out.print(i + " ");
+        }
+        System.out.println();
+
+        String message = "This is a message.";
+        for (int i = 0; i < message.length(); i++) {
+            System.out.println("For loop message: " + message.charAt(i));
+        }
     }
 }
