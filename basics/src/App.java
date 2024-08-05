@@ -126,5 +126,19 @@ public class App {
 
         result = !condition1;
         System.out.println("NOT: " + result);
+
+        // ---
+
+        // Control structures
+        // If Else
+        int age = 59;
+
+        if (age >= 18 && age <= 59) {
+            System.out.println("You are an adult.");
+        } else if (age >= 60) {
+            System.out.println("You are a senior.");
+        } else {
+            System.out.println("You are a minor.");
+        }
     }
 }
