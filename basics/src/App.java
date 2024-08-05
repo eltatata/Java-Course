@@ -140,5 +140,28 @@ public class App {
         } else {
             System.out.println("You are a minor.");
         }
+
+        // ---
+
+        // Switch
+        String animal = "Dog";
+
+        switch (animal) {
+            case "Dog":
+                System.out.println("Bark!");
+                break;
+            case "Cat":
+                System.out.println("Meow!");
+                break;
+            case "Cow":
+                System.out.println("Moo!");
+                break;
+            case "Chicken":
+                System.out.println("Cluck!");
+                break;
+            default:
+                System.out.println("Unknown animal.");
+                break;
+        }
     }
 }
