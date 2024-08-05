@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class App {
     public static void main(String[] args) throws Exception {
         // Hello world
@@ -163,5 +165,45 @@ public class App {
                 System.out.println("Unknown animal.");
                 break;
         }
+
+        // ---
+        // PRATICE 1: Drink machine (console game)
+
+        // Scanner
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Welcome to the drink machine!");
+        System.out.println("Select a drink:");
+        System.out.println("1. Coke - $1.00");
+        System.out.println("2. Pepsi - $1.50");
+        System.out.println("3. Sprite - $0.75");
+        System.out.println("4. Water - $0.50");
+        System.out.println("5. Exit");
+
+        System.out.print("Enter an option: ");
+        int option = scanner.nextInt();
+
+        switch (option) {
+            case 1:
+                System.out.println("You selected Coke. Please insert $1.00.");
+                break;
+            case 2:
+                System.out.println("You selected Pepsi. Please insert $1.50.");
+                break;
+            case 3:
+                System.out.println("You selected Sprite. Please insert $0.75.");
+                break;
+            case 4:
+                System.out.println("You selected Water. Please insert $0.50.");
+                break;
+            case 5:
+                System.out.println("Goodbye!");
+                break;
+            default:
+                System.out.println("Invalid option.");
+                break;
+        }
+
+        scanner.close();
     }
 }
