@@ -5,6 +5,14 @@ public class Persona {
     String email;
     Career career;
 
+    public Persona(String name, String lastName, int age, String email) {
+        this.name = name;
+        this.lastName = lastName;
+        this.age = age;
+        this.email = email;
+        this.career = new Career();
+    }
+
     public String sendGreeting(String name) {
         return "Hello, " + name + "! My name is " + this.name + " " + this.lastName;
     }

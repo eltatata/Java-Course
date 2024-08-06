@@ -5,6 +5,16 @@ public class Career {
     boolean isPopular;
     boolean isStudent;
 
+    public Career() {}
+
+    public Career(String name, String description, String[] skills, boolean isPopular, boolean isStudent) {
+        this.name = name;
+        this.description = description;
+        this.skills = skills;
+        this.isPopular = isPopular;
+        this.isStudent = isStudent;
+    }
+
     public void printCareer() {
         System.out.println("Name: " + name);
         System.out.println("Description: " + description);

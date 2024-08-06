@@ -1,42 +1,26 @@
 public class App {
     public static void main(String[] args) throws Exception {
-        Persona person1 = new Persona();
-        person1.name = "John";
-        person1.lastName = "Doe";
-        person1.age = 25;
-        person1.email = "john@gmail.com";
+        Persona person1 = new Persona("John", "Doe", 25, "ohn@gmail.com");
+        person1.career.name = "Software Developer";
+        person1.career.description = "Develops software";
+        person1.career.skills[0] = "Java";
+        person1.career.skills[1] = "Python";
+        person1.career.skills[2] = "JavaScript";
+        person1.career.skills[3] = "C++";
+        person1.career.skills[4] = "C#";
+        person1.career.isPopular = true;
+        person1.career.isStudent = false;
 
-        Career career1 = new Career();
-        career1.name = "Software Developer";
-        career1.description = "Develops software";
-        career1.skills[0] = "Java";
-        career1.skills[1] = "Python";
-        career1.skills[2] = "JavaScript";
-        career1.skills[3] = "C++";
-        career1.skills[4] = "C#";
-        career1.isPopular = true;
-        career1.isStudent = false;
-
-        person1.career = career1;
-
-        Persona person2 = new Persona();
-        person2.name = "Alice";
-        person2.lastName = "Smith";
-        person2.age = 17;
-        person2.email = "alice@gmail.com";
-
-        Career career2 = new Career();
-        career2.name = "Data Analyst";
-        career2.description = "Analyzes data";
-        career2.skills[0] = "Python";
-        career2.skills[1] = "R";
-        career2.skills[2] = "SQL";
-        career2.skills[3] = "Excel";
-        career2.skills[4] = "Tableau";
-        career2.isPopular = true;
-        career2.isStudent = true;
-
-        person2.career = career2;
+        Persona person2 = new Persona("Alice", "Smith", 17, "ice@gmail.com");
+        person2.career.name = "Data Analyst";
+        person2.career.description = "Analyzes data";
+        person2.career.skills[0] = "Python";
+        person2.career.skills[1] = "R";
+        person2.career.skills[2] = "SQL";
+        person2.career.skills[3] = "Excel";
+        person2.career.skills[4] = "Tableau";
+        person2.career.isPopular = true;
+        person2.career.isStudent = true;
 
         // ---
 
