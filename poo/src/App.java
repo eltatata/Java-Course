@@ -59,5 +59,27 @@ public class App {
         System.out.println("New age: " + person2.getAge());
         person2.setName("Bob");
         System.out.println("New name: " + person2.getName());
+
+        // ---
+
+        // Animals and Inheritance
+        System.out.println("\nAnimals:");
+
+        Animal animal0 = new Animal("Animal", "Unknown", 0);
+        Dog animal1 = new Dog("Dog", "Poodle", 11);
+        Cat animal2 = new Cat("Cat", "Siamese", 8);
+        
+        animal0.printAnimal();
+        animal0.makeSound();
+
+        System.out.println();
+
+        animal1.printAnimal();
+        animal1.makeSound();
+
+        System.out.println();
+
+        animal2.printAnimal();
+        animal2.makeSound();
     }
 }
