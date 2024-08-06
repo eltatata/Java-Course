@@ -81,5 +81,12 @@ public class App {
 
         animal2.printAnimal();
         animal2.makeSound();
+
+        // ---
+
+        // Static
+        System.out.println("\nStatic:");
+
+        System.out.println("Number of animals created: " + Animal.getCount());
     }
 }
