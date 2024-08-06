@@ -1,11 +1,11 @@
-import java.util.HashSet;
 import java.util.Set;
+import java.util.TreeSet;
 
 public class App {
     public static void main(String[] args) throws Exception {
         System.out.println("Welcome to the superheros party!");
 
-        Set<String> superheros = new HashSet<>();
+        Set<String> superheros = new TreeSet<>();
 
         superheros.add("Batman");
         superheros.add("Wonder Woman");
