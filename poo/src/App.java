@@ -40,5 +40,24 @@ public class App {
         System.out.println("Is Student: " + person2.isStudent());
         person2.printPerson();
         person2.career.printSkills();
+
+        // ---
+
+        // Getters and Setters
+        System.out.println("\nGetters and Setters:");
+
+        System.out.println("\nPerson 1:");
+        System.out.println("Age: " + person1.getAge());
+        person1.setAge(30);
+        System.out.println("New age: " + person1.getAge());
+        person1.setName("Jane");
+        System.out.println("New name: " + person1.getName());
+
+        System.out.println("\nPerson 2:");
+        System.out.println("Age: " + person2.getAge());
+        person2.setAge(20);
+        System.out.println("New age: " + person2.getAge());
+        person2.setName("Bob");
+        System.out.println("New name: " + person2.getName());
     }
 }
