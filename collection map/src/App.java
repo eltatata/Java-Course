@@ -1,11 +1,11 @@
-import java.util.HashMap;
 import java.util.Map;
+import java.util.TreeMap;
 
 public class App {
     public static void main(String[] args) throws Exception {
         System.out.println("Welcome to the fruit shop!");
 
-        Map<String, Integer> fruits = new HashMap<>();
+        Map<String, Integer> fruits = new TreeMap<>();
 
         fruits.put("apple", 100);
         fruits.put("banana", 50);
