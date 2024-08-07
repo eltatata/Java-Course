@@ -1,10 +1,10 @@
-import java.util.LinkedList;
+import java.util.Vector;
 
 public class App {
     public static void main(String[] args) throws Exception {
         System.out.println("Welcome to the superheros party!");
 
-        LinkedList<String> superheros = new LinkedList<>();
+        Vector<String> superheros = new Vector<>();
 
         superheros.add("Batman");
         superheros.add("Wonder Woman");
