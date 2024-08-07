@@ -1,10 +1,10 @@
-import java.util.ArrayList;
+import java.util.LinkedList;
 
 public class App {
     public static void main(String[] args) throws Exception {
         System.out.println("Welcome to the superheros party!");
 
-        ArrayList<String> superheros = new ArrayList<>();
+        LinkedList<String> superheros = new LinkedList<>();
 
         superheros.add("Batman");
         superheros.add("Wonder Woman");
