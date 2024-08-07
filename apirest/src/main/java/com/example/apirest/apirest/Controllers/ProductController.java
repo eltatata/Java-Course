@@ -33,12 +33,12 @@ public class ProductController {
                 .orElseThrow(() -> new RuntimeException("Not found"));
     }
 
-    @PostMapping("path")
+    @PostMapping()
     public Product create(@RequestBody Product product) {
         return productRepository.save(product);
     }
 
-    @PutMapping("path/{id}")
+    @PutMapping("/{id}")
     public Product update(@PathVariable Long id, @RequestBody Product product) {
         Product productToUpdate = productRepository.findById(id)
                 .orElseThrow(() -> new RuntimeException("Not found"));
